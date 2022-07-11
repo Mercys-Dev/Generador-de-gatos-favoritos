@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#titles-principals{
+    display: grid;
+    justify-content: center;
+
+    padding: 24px 24px;
+
+    color: #555265;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#randomMichis{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0px 30px;
+}
+
+#randomMichis .button_principal{
+    align-self: center;
+}
+
+
+#randomMichis_cards{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5rem;
+
+    grid-template-columns: repeat(auto-fit, 450px);
+    grid-template-rows: 1fr auto;
+
+    margin-bottom: 20px;
+
+}
+
+#randomMichis_cards article{
+    position: relative;
+
+}
+
+#randomMichis_cards article img{
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.favorite_button{
+    position: absolute;
+    padding: 0;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12rem;
+    background-color: transparent;
+    opacity: 0%;
+}
+
+.favorite_button:hover{
+    background-color: transparent;
+    color: #FF4C29;
+    opacity: 60%;
+}
+
+/* .favorite_button:hover ~ .imagesita{
+    opacity: 60%;
+} */
+
+.favorite_button:active{
+    opacity: 100%;
+}
+
+
+#uploadingMichi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#uploadingMichi h2{
+    font-size: 2.8rem;
+    color: #6c867b;
+    font-weight: 700;
+}
+
+#uploadingForms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#uploadingForms button{
+    border-radius: 30px;
+    align-self: center;
+    width: 20%;
+    height: auto;
+
+    font-size: 1.5rem;
+}
+
+#upload_imagen{
+    border-radius: 15px 50px;
+    color: black;
+    background-color: white ;
+    padding: 30px 10%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 400ms;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#upload_imagen span{
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#upload_imagen:hover{
+    padding: 35px 15%;
+    background-color: rgb(233, 224, 224);
+  }
+
+#upload_imagen i{
+    margin-top: 10px;
+    font-size: 4.5rem;
+    align-self: center;
+}
+
+#file{
+    position: absolute;
+    visibility: hidden;
+  }
+
+#preview img{
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#favoritesMichis h2{
+    margin-top: 40px;
+    text-align: center;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0b5e62;
+}
+
+
+#favoritesMichis div{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 35px;
+
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: 1fr auto;
+
+    margin: 40px 0px 20px;
+}
+
+#favoritesMichis article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#favoritesMichis article img{
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#favoritesMichis article button{
+    border-radius: 30px;
+    align-self: center;
+    width: 80%;
+    height: auto;
+
+    font-size: 1.5rem;
+}
+
+button{
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #082032;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 300ms;
+  }
+
+button:hover{
+    background-color: orange;
+}
+
+.button_principal{
+    border-radius: 30px;
+    align-self: center;
+    width: 70%;
+    font-size: 2.2rem;
+}
+
+i{
+    margin: 0 5px 0 5px; 
+}
+
+

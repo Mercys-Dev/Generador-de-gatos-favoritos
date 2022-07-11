@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gatitos Aleratorios</title>
+    <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://kit.fontawesome.com/7184d32704.js" 
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <section id="titles-principals">
+    
+        <h1>Gatitos Aleratorios</h1>
+
+        <span id="Error"></span>
+
+    </section>
+
+    <section id="randomMichis">
+
+        <div id="randomMichis_cards">
+            <article>
+                <img id="img1" class="imagesita" width="450" height="450" alt="gatos">
+                <button id="btn1" class="favorite_button">
+                    <i class="fa-solid fa-heart"></i>
+                </button>   
+            </article>
+
+            <article>
+                <img id="img2" width="450"  height="450" alt="gatos">
+                <button id="btn2" class="favorite_button">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </article>
+
+            <article>
+                <img id="img3" width="450" height="450" alt="gatos">
+                <button id="btn3" class="favorite_button">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </article>
+        </div>
+        
+        <button class="button_principal" onclick="loadRandomMichis()">Recargar</button>
+
+    </section>
+
+    <section id="uploadingMichi">
+        <h2>Sube la foto de tu michi</h2>
+        
+        <form id="uploadingForms">
+            <label for="file" id="upload_imagen">
+                <span>Selecciona tu Michi</span><i class="fa-solid fa-cloud-arrow-down"></i>
+                <input id="file" type="file" name="file">
+            </label>
+            <div id="preview"></div>
+            <button type="button" onclick="uploadMichi()" >Subir Foto de michi</button>
+        
+        </form>
+    </section>
+
+    <section id="favoritesMichis">
+
+<!-- 
+        <article>
+            <img id="img1" width="150" alt="gatos">
+            <button>Sacar de favoritos</button>
+        </article> -->
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
